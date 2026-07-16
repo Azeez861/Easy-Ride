@@ -1,0 +1,234 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#0F172A;
+}
+
+.container{
+    display:flex;
+    min-height:100vh;
+}
+
+/* LEFT SIDE */
+
+.left{
+    width:50%;
+    background:url("city.jpg");
+    background-size:cover;
+    background-position:center;
+    position:relative;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.55);
+}
+
+.welcome{
+    position:relative;
+    z-index:1;
+    text-align:center;
+    color:white;
+}
+
+.logo{
+    width:120px;
+    margin-bottom:20px;
+}
+
+.welcome h1{
+    font-size:55px;
+    color:#F4B400;
+}
+
+.welcome p{
+    font-size:20px;
+    margin-top:10px;
+}
+
+/* RIGHT SIDE */
+
+.right{
+    width:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#0F172A;
+}
+
+.login-card{
+    width:420px;
+    padding:40px;
+    border-radius:20px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(12px);
+
+    color:white;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+.login-card h2{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.login-card p{
+    text-align:center;
+    margin-bottom:30px;
+    color:#ccc;
+}
+
+/* INPUT */
+
+.input-box{
+    position:relative;
+    margin-bottom:20px;
+}
+
+.input-box input{
+
+    width:100%;
+    padding:15px 45px;
+
+    border:none;
+    outline:none;
+
+    border-radius:10px;
+
+    background:#1E293B;
+
+    color:white;
+
+    font-size:16px;
+}
+
+.input-box input::placeholder{
+    color:#ccc;
+}
+
+.input-box i:first-child{
+
+    position:absolute;
+
+    left:15px;
+    top:17px;
+
+    color:#F4B400;
+}
+
+.password #eye{
+
+    position:absolute;
+
+    right:15px;
+
+    top:17px;
+
+    cursor:pointer;
+
+    color:#F4B400;
+}
+
+/* OPTIONS */
+
+.options{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:20px;
+
+    font-size:14px;
+}
+
+.options a{
+
+    color:#F4B400;
+
+    text-decoration:none;
+}
+
+/* BUTTON */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    background:#F4B400;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+button:hover{
+
+    background:#d89b00;
+
+    transform:scale(1.03);
+}
+
+/* SIGN UP */
+
+.signup{
+
+    margin-top:25px;
+
+    text-align:center;
+}
+
+.signup a{
+
+    color:#F4B400;
+
+    text-decoration:none;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+.left{
+
+display:none;
+
+}
+
+.right{
+
+width:100%;
+
+}
+
+.login-card{
+
+width:90%;
+
+}
+
+}
