@@ -6,10 +6,10 @@ setTimeout(function () {
     splash.style.display = "none";
 
     mainCountent.style.display = "block";
-}, 2500);
+}, 2000);
 
 const text = "Easy Ride.";
-const typingElement = document.getElementById("typing-text");
+const typingElement = document.getElementById("typing-texts");
 
 let index = 0;
 
@@ -20,7 +20,6 @@ function typeWriter() {
         setTimeout(typeWriter, 100)
     }
 }
-
 
 window.onload = () => {
     typingElement.textContent = "";
@@ -40,7 +39,7 @@ setInterval(() => {
 
     currentSlide++;
 
-    if(currentSlide >= totalSlides){
+    if (currentSlide >= totalSlides) {
         currentSlide = 0;
     }
 
