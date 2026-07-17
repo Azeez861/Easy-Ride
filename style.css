@@ -2417,3 +2417,314 @@ nav a:hover {
     }
 
 }
+
+/* SERVICE */
+
+/* ===========================
+   LARGE TABLETS (992px)
+=========================== */
+@media (max-width: 992px) {
+
+    .section1 {
+        min-height: 35vh;
+        background-attachment: scroll;
+    }
+
+    .over-lays {
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .over-lays h1 {
+        font-size: 34px;
+    }
+
+    .over-lays p {
+        font-size: 18px;
+    }
+
+    .section2 {
+        width: 95%;
+        gap: 25px;
+    }
+
+    .card-content h2 {
+        font-size: 30px;
+    }
+
+    .card-content p {
+        font-size: 17px;
+    }
+
+    .content {
+        width: 95%;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 50px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .buttons {
+        top: 6rem;
+    }
+
+    .primary,
+    .secondary {
+        width: 45%;
+    }
+
+}
+
+
+/* ===========================
+   TABLETS (768px)
+=========================== */
+@media (max-width: 768px) {
+
+    .section1 {
+        min-height: 30vh;
+    }
+
+    .over-lays h1 {
+        font-size: 30px;
+    }
+
+    .over-lays p {
+        font-size: 17px;
+    }
+
+    .section2 {
+        grid-template-columns: 1fr;
+        width: 92%;
+    }
+
+    .card-image {
+        height: 250px;
+    }
+
+    .card-content {
+        padding: 25px;
+    }
+
+    .card-content h2 {
+        font-size: 28px;
+    }
+
+    .card-content p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .content h1 {
+        font-size: 42px;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        flex-wrap: wrap;
+        position: relative;
+        top: 10rem;
+    }
+
+    .primary {
+        background: #FFD700;
+        color: #fff;
+        width: 100%;
+    }
+
+    .secondary {
+        background: #fff;
+        color: #222;
+        width: 100%;
+    }
+
+    .secondary:hover {
+        background: #d7d6d6;
+        color: var(--primary-colour);
+    }
+
+
+}
+
+@media (max-width: 576px) {
+
+    .section1 {
+        min-height: 28vh;
+        padding: 0;
+    }
+
+    .over-lays {
+        padding: 15px;
+    }
+
+    .over-lays h1 {
+        font-size: 25px;
+    }
+
+    .over-lays p {
+        font-size: 15px;
+    }
+
+    .section2 {
+        width: 95%;
+        margin: 50px auto;
+        gap: 20px;
+    }
+
+    .service-card {
+        border-radius: 18px;
+    }
+
+    .card-image {
+        height: 220px;
+    }
+
+    .icon {
+        width: 50px;
+        height: 50px;
+        left: 15px;
+        bottom: 15px;
+    }
+
+    .icon i {
+        font-size: 22px;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-content h2 {
+        font-size: 24px;
+    }
+
+    .card-content p {
+        font-size: 15px;
+    }
+
+    .card-content a {
+        font-size: 16px;
+    }
+
+    .section3 {
+        padding: 20px 15px;
+        min-height: auto;
+    }
+
+    .content h1 {
+        font-size: 32px;
+    }
+
+    .content p {
+        font-size: 16px;
+    }
+
+    .buttons {
+        top: 2rem;
+        gap: 15px;
+    }
+
+    .primary,
+    .secondary {
+        width: 100%;
+    }
+
+    
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        flex-wrap: wrap;
+        position: relative;
+        top: 10rem;
+    }
+
+    .primary {
+        background: #FFD700;
+        color: #fff;
+        width: 100%;
+    }
+
+    .secondary {
+        background: #fff;
+        color: #222;
+        width: 100%;
+    }
+
+    .secondary:hover {
+        background: #d7d6d6;
+        color: var(--primary-colour);
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+    .over-lays h1 {
+        font-size: 22px;
+    }
+
+    .over-lays p {
+        font-size: 14px;
+    }
+
+    .card-content h2 {
+        font-size: 22px;
+    }
+
+    .content h1 {
+        font-size: 28px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+
+    
+    
+    .buttons {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+        flex-wrap: wrap;
+        position: relative;
+        top: 10rem;
+    }
+
+    .primary {
+        background: #FFD700;
+        color: #fff;
+        width: 100%;
+    }
+
+    .secondary {
+        background: #fff;
+        color: #222;
+        width: 100%;
+    }
+
+    .secondary:hover {
+        background: #d7d6d6;
+        color: var(--primary-colour);
+    }
+
+
+}
