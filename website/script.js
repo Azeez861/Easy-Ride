@@ -1,6 +1,6 @@
     const form = document.getElementById("signupForm");
 
-form.addEventListener("submit",function(e){
+form.addEventListener("input",function(e){
 
 e.preventDefault();
 
@@ -12,7 +12,7 @@ document.getElementById("confirmPassword").value;
 
 let button = document.getElementById("button")
 
-if(password!=confirm){
+if(password!==confirm){
 button.disabled=true
 
 }
