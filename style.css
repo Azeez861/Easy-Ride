@@ -875,7 +875,8 @@ nav a:hover {
 
 .hero-section2 {
     width: 100%;
-    height: 60vh;
+    min-height: 60vh;
+    height: auto;
     background: url("/image/premium_photo-1661723355664-eda7169734ba.avif");
     background-size: cover;
     background-position: center;
@@ -933,6 +934,7 @@ nav a:hover {
     align-items: center;
     padding-inline: 45px;
     gap: 30px;
+    margin-bottom: 2vh;
 }
 
 .hero-section3 .text-images {
@@ -957,13 +959,12 @@ nav a:hover {
     width: 40%;
     height: 80vh;
     border-radius: 35%;
-
     transition: transform 0.5s ease;
     cursor: pointer;
     position: relative;
     top: 40px;
     border-radius: 10px;
-    border: 3px solid red;
+    border: 3px solid rgb(244, 242, 242);
 }
 
 .text-botton {
@@ -982,6 +983,7 @@ nav a:hover {
 .text-images button {
     background-color: #ffd900;
     width: 70%;
+    max-width: 400px;
     padding: 20px;
     font-size: 20px;
     margin: auto;
@@ -995,6 +997,205 @@ nav a:hover {
     transition: transform 0.5s ease;
 }
 
+
+
+/* SERVICE */
+
+
+.section1 {
+    width: 100%;
+    min-height: 40vh;
+    height: auto;
+    background: url("/image/photo-1486406146926-c627a92ad1ab.avif");
+    background-size: cover;
+    background-position: center;
+    /* align-items: center; */
+    padding: 0 8%;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.over-lays {
+    position: absolute;
+    inset: 0;
+    background-color: #444343a9;
+    padding-inline: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px;
+    text-align: center;
+}
+
+.over-lays h1 {
+    color: var(--primary-colour);
+    font-size: 40px;
+}
+
+.over-lays p {
+    color: var(--secondary-colour);
+    font-size: 20px;
+}
+
+
+
+.section2 {
+    width: 90%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.service-card {
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, .08);
+    transition: .4s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    position: relative;
+    height: 280px;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+
+.service-card:hover img {
+    transform: scale(1.08);
+}
+
+.icon {
+    position: absolute;
+    bottom: 25px;
+    left: 25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .25);
+    backdrop-filter: blur(10px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    color: #fff;
+    font-size: 28px;
+}
+
+.card-content {
+    padding: 35px;
+}
+
+.card-content h2 {
+    font-size: 38px;
+    color: #16213E;
+    margin-bottom: 18px;
+}
+
+.card-content p {
+    color: #6d7788;
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: #ff5b00;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: .3s;
+}
+
+.card-content a i {
+    margin-left: 8px;
+}
+
+.card-content a:hover {
+    letter-spacing: 1px;
+}
+
+
+.section3 {
+    width: 100%;
+    min-height: 80vh;
+    position: relative;
+    z-index: 2;
+    padding: 30px;
+
+}
+
+.overlayss {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(#fdfdfd39,
+            #532a01);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    max-width: 900px;
+    color: #fff;
+}
+
+.content h1 {
+    font-size: 70px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.content p {
+    font-size: 22px;
+    line-height: 1.7;
+    max-width: 760px;
+    margin: 0 auto 45px;
+    color: var(--primary-colour);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    position: relative;
+    top: 10rem;
+}
+
+.primary {
+    background: #FFD700;
+    color: #fff;
+    width: 33%;
+}
+
+.secondary {
+    background: #fff;
+    color: #222;
+    width: 33%;
+}
+
+.secondary:hover {
+    background: #d7d6d6;
+    color: var(--primary-colour);
+}
 
 
 
@@ -1957,6 +2158,262 @@ nav a:hover {
 
     .btn {
         width: 100%;
+    }
+
+}
+
+
+/* Aboutus */
+
+/* ==========================================
+   RESPONSIVE DESIGN
+========================================== */
+
+/* Large Laptop (1200px and below) */
+@media (max-width: 1200px) {
+
+    .hero-section3 {
+        padding-inline: 30px;
+        gap: 20px;
+    }
+
+    .text-images h1 {
+        font-size: 42px;
+    }
+
+    .text-images p {
+        font-size: 17px;
+    }
+
+    .image-car {
+        width: 45%;
+        height: auto;
+    }
+
+}
+
+
+/* Laptop (992px and below) */
+@media (max-width: 992px) {
+
+    .hero-section2 {
+        height: auto;
+        min-height: 60vh;
+        background-attachment: fixed;
+        background-position: calc(0px);
+    }
+
+    .overlays {
+        justify-content: center;
+        align-items: center;
+        padding: 40px 25px;
+    }
+
+    .hero-section2 h3 {
+        font-size: 28px;
+    }
+
+    .hero-section2 h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    .hero-section2 p {
+        font-size: 20px;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .hero-section3 {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 25px;
+    }
+
+    .hero-section3 .text-images {
+        align-items: center;
+    }
+
+    .text-images .span {
+        width: 80px;
+        height: 5px;
+    }
+
+    .text-images p {
+        max-width: 100%;
+    }
+
+    .image-car {
+        width: 75%;
+        height: auto;
+        top: 0;
+    }
+
+    .text-botton {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .text-images button {
+        width: 80%;
+    }
+
+}
+
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+
+    .hero-section2 {
+        min-height: 55vh;
+    }
+
+    .overlays {
+        padding: 25px;
+        gap: 15px;
+    }
+
+    .hero-section2 h3 {
+        font-size: 24px;
+    }
+
+    .hero-section2 h1 {
+        font-size: 35px;
+    }
+
+    .hero-section2 p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .text-images h1 {
+        font-size: 35px;
+    }
+
+    .text-images p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .image-car {
+        width: 90%;
+    }
+
+    .text-botton {
+        gap: 20px;
+    }
+
+    .text-botton .text-color {
+        width: 45%;
+    }
+
+    .text-images button {
+        width: 100%;
+        font-size: 18px;
+    }
+
+}
+
+
+/* Mobile (576px and below) */
+@media (max-width: 576px) {
+
+    .hero-section2 {
+        min-height: 50vh;
+    }
+
+    .overlays {
+        padding: 20px 15px;
+    }
+
+    .hero-section2 h3 {
+        font-size: 20px;
+    }
+
+    .hero-section2 h1 {
+        font-size: 28px;
+    }
+
+    .hero-section2 p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .hero-section3 {
+        padding: 30px 15px;
+    }
+
+    .text-images h1 {
+        font-size: 28px;
+    }
+
+    .text-images p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+
+    .text-images .span {
+        width: 60px;
+        height: 4px;
+    }
+
+    .image-car {
+        width: 100%;
+    }
+
+    .text-botton {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-botton .text-color {
+        width: 100%;
+    }
+
+    .text-images button {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+
+}
+
+
+/* Small Mobile (400px and below) */
+@media (max-width: 400px) {
+
+    .hero-section2 h3 {
+        font-size: 18px;
+    }
+
+    .hero-section2 h1 {
+        font-size: 24px;
+    }
+
+    .hero-section2 p {
+        font-size: 14px;
+    }
+
+    .text-images h1 {
+        font-size: 24px;
+    }
+
+    .text-images p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+
+    .text-images button {
+        font-size: 15px;
+        padding: 14px;
+    }
+
+    .text-botton .text-color h3 {
+        font-size: 22px;
+    }
+
+    .text-botton .text-color p {
+        font-size: 14px;
     }
 
 }

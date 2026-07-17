@@ -46,3 +46,10 @@ setInterval(() => {
     slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
 
 }, 2000); // 10000ms = 10 seconds
+
+
+
+ function show_nav() {
+                    var nav_items = document.getElementById("nav-items");
+                    nav_items.classList.toggle("open");
+                }
