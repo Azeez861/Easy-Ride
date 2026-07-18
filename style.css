@@ -20,10 +20,12 @@ body {
     --last-colour: #D1D5DB;
 }
 
+/* Splash */
+
 #splash {
     text-align: center;
     background: linear-gradient(150deg, #dcdada, #141313);
-    height: 100vh;
+    /* height: 20vh; */
 }
 
 #splash h1 {
@@ -45,20 +47,21 @@ img {
     color: var(--secondary-colour);
 }
 
-.loader {
+/* .loader {
     margin-top: 30px;
     width: 5%;
     animation: spin 1s linear infinite;
     margin: auto;
-}
-
-@keyframes spin {
-    100% {
-        transform: rotate(800deg);
     }
-}
 
-/* Main Website */
+    @keyframes spin {
+    100% {
+    transform: rotate(800deg);
+    }
+    } */
+
+
+
 
 #main-content {
     display: none;
@@ -358,7 +361,6 @@ hr {
 
 
 /* Landing Page */
-
 
 .header2 {
     background-color: #000000cf;
@@ -1198,10 +1200,152 @@ nav a:hover {
 }
 
 
+/* CONTAC US */
+.text-section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+
+.text-section2 {
+    display: flex;
+    justify-content: center;
+    gap: 15vh;
+}
+
+.div1 {
+    background-color: #ffffff;
+    box-shadow: 5px 10px 10px 7px #d1cfcf61;
+    padding: 30px;
+    width: 33%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 80vh;
+}
+
+.div1 h1 {
+    font-size: 25px;
+    color: #FFD700;
+}
+
+.text-divss {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+
+.text-divss .iicon {
+    background-color: #ffed9f6c;
+    width: 20%;
+    text-align: center;
+    height: 7vh;
+    border-radius: 10px;
+
+}
+
+.fa-location-dot {
+    font-size: 30px;
+    color: #e7c505;
+    position: relative;
+    top: 1vh;
+}
+
+.fa-phone {
+    font-size: 30px;
+    color: #e7c505;
+    position: relative;
+    top: 1vh;
+}
+
+.fa-envelope {
+    font-size: 30px;
+    color: #e7c505;
+    position: relative;
+    top: 1vh;
+}
+
+
+.div2 {
+    background-color: #ffffff;
+    box-shadow: 5px 10px 10px 7px #d1cfcf61;
+    padding: 30px;
+    width: 33%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    height: 135vh;
+    margin-bottom: 30px;
+}
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form h1{
+    font-size: 25px;
+}
+
+form input{
+    margin-bottom: 10px;
+    height: 8vh;
+    background-color: #c6c5c537;
+    border: none;
+    padding: 20px;
+    border-radius: 10px;
+    outline-color: #ffd900;
+}
+
+form textarea{
+    height: 30vh;
+    background-color: #c6c5c537;
+    outline-color: #35f406;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+#form-submit{
+    color: var(--primary-colour);
+    background-color: #35f406;
+}
+
+#toast {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #101010aa;
+    color: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+#toast.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+
 
 /* Responsive */
 
-/*LARGE SCREENS (1200px and below)*/
 @media (max-width:1200px) {
 
     #splash {
@@ -1780,6 +1924,7 @@ nav a:hover {
 
 
 
+
 /* second responsive */
 
 @media (max-width:1200px) {
@@ -2163,13 +2308,10 @@ nav a:hover {
 }
 
 
+
+
 /* Aboutus */
 
-/* ==========================================
-   RESPONSIVE DESIGN
-========================================== */
-
-/* Large Laptop (1200px and below) */
 @media (max-width: 1200px) {
 
     .hero-section3 {
@@ -2192,8 +2334,6 @@ nav a:hover {
 
 }
 
-
-/* Laptop (992px and below) */
 @media (max-width: 992px) {
 
     .hero-section2 {
@@ -2260,8 +2400,6 @@ nav a:hover {
 
 }
 
-
-/* Tablet (768px and below) */
 @media (max-width: 768px) {
 
     .hero-section2 {
@@ -2315,7 +2453,6 @@ nav a:hover {
 }
 
 
-/* Mobile (576px and below) */
 @media (max-width: 576px) {
 
     .hero-section2 {
@@ -2378,8 +2515,6 @@ nav a:hover {
 
 }
 
-
-/* Small Mobile (400px and below) */
 @media (max-width: 400px) {
 
     .hero-section2 h3 {
@@ -2418,11 +2553,10 @@ nav a:hover {
 
 }
 
+
+
 /* SERVICE */
 
-/* ===========================
-   LARGE TABLETS (992px)
-=========================== */
 @media (max-width: 992px) {
 
     .section1 {
@@ -2481,10 +2615,6 @@ nav a:hover {
 
 }
 
-
-/* ===========================
-   TABLETS (768px)
-=========================== */
 @media (max-width: 768px) {
 
     .section1 {
@@ -2643,8 +2773,8 @@ nav a:hover {
         width: 100%;
     }
 
-    
-    
+
+
     .buttons {
         display: flex;
         justify-content: center;
@@ -2697,8 +2827,8 @@ nav a:hover {
         font-size: 15px;
     }
 
-    
-    
+
+
     .buttons {
         display: flex;
         justify-content: center;
@@ -2727,4 +2857,213 @@ nav a:hover {
     }
 
 
+}
+
+        /* CONTACT */
+
+@media (max-width: 1200px) {
+
+    .text-section1 {
+        padding: 50px 6%;
+    }
+
+    .text-section1 h1 {
+        font-size: 2.5rem;
+    }
+
+    .text-section1 p {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .text-section2 {
+        padding: 50px 6%;
+        gap: 30px;
+    }
+
+    .div1,
+    .div2 {
+        flex: 1;
+    }
+
+    .text-divss {
+        margin-bottom: 25px;
+    }
+
+    .iicon {
+        width: 55px;
+        height: 55px;
+        font-size: 22px;
+    }
+
+    form h1 {
+        font-size: 2.2rem;
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    #form-submit {
+        padding: 14px;
+        font-size: 17px;
+    }
+}
+
+
+@media (max-width: 992px) {
+
+    .text-section1 {
+        padding: 40px 5%;
+        text-align: center;
+    }
+
+    .text-section1 h1 {
+        font-size: 2rem;
+    }
+
+    .text-section1 p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .text-section2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 5%;
+    }
+
+    .div1,
+    .div2 {
+        width: 100%;
+    }
+
+    .text-divss {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .iicon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    form h1 {
+        font-size: 2rem;
+    }
+
+    form input,
+    form textarea {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        min-height: 120px;
+    }
+
+    #form-submit {
+        width: 100%;
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    #toast {
+        width: 90%;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+        bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .text-section1 h1 {
+        font-size: 1.8rem;
+    }
+
+    .text-section1 p {
+        font-size: 15px;
+    }
+
+    form h1 {
+        font-size: 1.7rem;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    input,
+    textarea {
+        font-size: 15px;
+        padding: 12px;
+    }
+
+    .iicon {
+        width: 45px;
+        height: 45px;
+    }
+
+    .text-divss h3 {
+        font-size: 18px;
+    }
+
+    .text-divss p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .text-section1 {
+        padding: 30px 20px;
+    }
+
+    .text-section1 h1 {
+        font-size: 1.5rem;
+    }
+
+    .text-section1 p {
+        font-size: 14px;
+    }
+
+    .text-section2 {
+        padding: 30px 20px;
+    }
+
+    form h1 {
+        font-size: 1.5rem;
+    }
+
+    input,
+    textarea {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #form-submit {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .iicon {
+        width: 40px;
+        height: 40px;
+        font-size: 18px;
+    }
+
+    #toast {
+        width: calc(100% - 40px);
+        font-size: 14px;
+    }
 }

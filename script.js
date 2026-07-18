@@ -49,7 +49,31 @@ setInterval(() => {
 
 
 
- function show_nav() {
-                    var nav_items = document.getElementById("nav-items");
-                    nav_items.classList.toggle("open");
-                }
+function show_nav() {
+    var nav_items = document.getElementById("nav-items");
+    nav_items.classList.toggle("open");
+}
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const form = document.getElementById("contactForm");
+    const toast = document.getElementById("toast");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+
+        // Show the toast
+        toast.classList.add("show");
+
+        // Hide it after 3 seconds
+        setTimeout(function () {
+            toast.classList.remove("show");
+        }, 2000);
+
+        // Reset the form
+        form.reset();
+    });
+
+});
