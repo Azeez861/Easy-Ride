@@ -77,3 +77,58 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+
+const tabs = document.querySelectorAll(".tab");
+const forms = document.querySelectorAll(".form");
+
+const emailInput = document.getElementById("emailInput");
+const phoneInput = document.getElementById("phoneInput");
+
+const continueBtn = document.getElementById("continueBtn");
+
+let activeTab = "emailForm";
+
+tabs.forEach(tab => {
+
+    tab.addEventListener("click", () => {
+
+        tabs.forEach(btn => btn.classList.remove("active"));
+        forms.forEach(form => form.classList.remove("active"));
+
+        tab.classList.add("active");
+
+        document
+        .getElementById(tab.dataset.tab)
+        .classList.add("active");
+
+        activeTab = tab.dataset.tab;
+
+        checkInput();
+
+    });
+
+});
+
+function checkInput(){
+
+    if(activeTab === "emailForm"){
+
+        continueBtn.disabled =
+        emailInput.value.trim()==="";
+
+    }
+
+    else{
+
+        continueBtn.disabled =
+        phoneInput.value.trim()==="";
+
+    }
+
+}
+
+emailInput.addEventListener("input",checkInput);
+
+phoneInput.addEventListener("input",checkInput);
