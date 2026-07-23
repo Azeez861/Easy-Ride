@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver-page</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/image/logo">
+    <link rel="icon" href="/image/easy-ride logo.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+</head>
+
+<body>
+
+    <div class="dashboard">
+        <div id="side-bar">
+
+            <h2 class="logo">Easy Ride</h2>
+
+            <div class="profile">
+
+                <img id="profileImage" src="/image/userr.webp">
+
+                <h3 id="driverName"></h3>
+
+                <p>Driver</p>
+
+            </div>
+
+            <div class="menu">
+
+                <button id="settingsBtn" class="menu-btn">
+                    ⚙ Settings
+                </button>
+
+                <!-- Hidden by default -->
+                <div id="settingsBox">
+
+                    <label class="uploadBtn">
+                        📷 Change Profile Picture
+                        <input type="file" id="uploadImage" accept="image/*" hidden>
+                    </label>
+
+                </div>
+
+                <button id="logoutBtn" class="logoutBtn">
+                    🚪 Logout
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="head">
+
+            <img src="/image/logo.png" alt="" class="headimage">
+            <div class="head-text">
+            <div>
+                <h2>Welcome back.</h2>
+                <h3 id="sidebarName"></h3>
+            </div>
+            <i class="fa-solid fa-bell"></i>
+
+        </div>
+        <div class="main"></div>
+
+    </div>
+
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easy Ride</title>
+    <title>Login</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/image/logo">
     <link rel="icon" href="/image/easy-ride logo.png">
     <link rel="stylesheet" href="/style.css">
@@ -22,51 +22,51 @@
             </h1>
 
             <h3>LOG IN</h3>
-            <div class="tabs">
-                <button class="tab active" data-tab="emailForm" id="tabb">
-                    Email or Username
-                </button>
 
-                <button class="tab" data-tab="phoneForm" id="tabb">
-                    Phone Number
-                </button>
-            </div>
+                <div class="tabs">
+                    <button class="tab active" data-tab="emailForm" id="tabb">
+                        Email or Username
+                    </button>
 
-            <div id="emailForm" class="form active">
+                    <button class="tab" data-tab="phoneForm" id="tabb">
+                        Phone Number
+                    </button>
+                </div>
 
-                <label>Email or Username</label>
+                <div id="emailForm" class="form active">
 
-                <input type="text" id="emailInput" placeholder="Email or Username">
+                    <label>Email or Username</label>
 
-            </div>
-            <div id="phoneForm" class="form">
+                    <input type="text" id="emailInput" placeholder="Email or Username">
 
-                <label>Phone Number</label>
+                </div>
+                <div id="phoneForm" class="form">
 
-                <div class="phone-box">
+                    <label>Phone Number</label>
 
-                    <select id="country">
-                        <option>+234</option>
-                        <option>+1</option>
-                        <option>+44</option>
-                        <option>+91</option>
-                    </select>
+                    <div class="phone-box">
 
-                    <input type="tel" id="phoneInput" placeholder="Phone Number">
+                        <select id="country">
+                            <option>+234</option>
+                            <option>+1</option>
+                            <option>+44</option>
+                            <option>+91</option>
+                        </select>
+
+                        <input type="tel" id="phoneInput" placeholder="Phone Number">
+
+                    </div>
 
                 </div>
 
-            </div>
+                <button id="continueBtn" disabled class="tabb">
+                     Log in →
+                </button>
 
-            <button id="continueBtn" disabled class="tabb">
-                Continue →
-            </button>
+                <a href="forget-password.html" class="forgot">
+                    Forgot Password
+                </a>
 
-            <a href="forget-password.html" class="forgot" >
-                Forgot Password
-            </a>
-
-            </form>
             <hr>
 
             <p class="signup">
@@ -89,9 +89,7 @@
                         English, Nigeria
                     </option>
 
-                    <option>
-                        English, Ghana
-                    </option>
+
 
                 </select>
 

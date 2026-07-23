@@ -17,6 +17,7 @@ body {
     --primary-colour: #F9FAFB;
     --secondary-colour: #CCCBCB;
     --third-color: #6B7280;
+    --fourth-color: #ffd900;
     --last-colour: #D1D5DB;
 }
 
@@ -998,23 +999,27 @@ nav a:hover {
 
 .text-botton .text-color {
     box-shadow: 10px 0 10px 0 #ffd9004c;
+    display: flex;
+    gap: 20px;
     padding: 10px;
     width: 50%;
     border-radius: 20px;
 }
 
-.text-images button {
+.text-images .a-a {
     background-color: #ffd900;
     width: 70%;
     max-width: 400px;
     padding: 20px;
     font-size: 20px;
     margin: auto;
+    color: #ffffff;
+    border-radius: 20px;
 }
 
 
-.text-images button:hover {
-    background-color: #e7c506;
+.text-images .a-a:hover {
+    background-color: #f4d006;
     padding: 20px;
     transform: translateY(-3px);
     transition: transform 0.5s ease;
@@ -1662,6 +1667,8 @@ h3 {
     cursor: pointer;
     font-size: 16px;
     transition: .3s;
+    font-size: 16px;
+    font-weight: 100;
 }
 
 .tab:hover {
@@ -1671,9 +1678,10 @@ h3 {
 .tab.active {
     background: #ffd900;
     box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+
 }
 
-#tabb:hover{
+#tabb:hover {
     color: #ffffff;
     /* height: 0; */
     font-size: 16px;
@@ -1741,7 +1749,7 @@ select {
     background: #2ecc71;
 }
 
-.tabb:hover{
+.tabb:hover {
     color: #ffffff;
     font-size: 16px;
     font-weight: 100;
@@ -2102,19 +2110,19 @@ input {
     margin-bottom: 30px;
 }
 
-.mobile-text{
+.mobile-text {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 5rem;
 }
 
-.mobile-text .mobile-image{
+.mobile-text .mobile-image {
     height: 80vh;
     width: 30%;
 }
 
-.text-mobile1{
+.text-mobile1 {
     display: flex;
     flex-direction: column;
     text-align: start;
@@ -2122,23 +2130,24 @@ input {
     align-items: center;
 }
 
-.text-mobile1 h3{
+.text-mobile1 h3 {
     font-size: 30px;
     font-weight: 700;
 }
-.text-mobile1 p{
+
+.text-mobile1 p {
     font-size: 17px;
     align-items: center;
     max-width: 40rem;
 }
 
-.h-p-text{
+.h-p-text {
     display: flex;
     flex-direction: column;
-    gap:25px;
+    gap: 25px;
 }
 
-.pptext{
+.pptext {
     position: relative;
     top: 35px;
     font-size: 20px;
@@ -2149,11 +2158,11 @@ input {
 
 }
 
-.pptext i{
+.pptext i {
     color: #ffd900;
 }
 
-.text-fuction{
+.text-fuction {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -2161,83 +2170,296 @@ input {
     justify-content: center;
 }
 
-.text-fuction h1{
+.text-fuction h1 {
     font-size: 40px;
     align-self: start;
     padding-left: 40px;
     color: #3e3f40;
 }
 
-.faq-section{
-    width:60%;
-   
+.faq-section {
+    width: 60%;
+
 }
 
-.faq-item{
-    background:#fff;
-    border:1px solid #ddd;
-    border-radius:18px;
-    margin-bottom:25px;
-    overflow:hidden;
-    transition:.3s;
+.faq-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 18px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    transition: .3s;
 }
 
-.faq-item.active{
-    border:2px solid #ffd900;
-    box-shadow:0 4px 12px rgba(0,0,0,.08);
+.faq-item.active {
+    border: 2px solid #ffd900;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .08);
 }
 
-.faq-question{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:28px;
-    cursor:pointer;
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px;
+    cursor: pointer;
 }
 
-.faq-question h3{
-    font-size:20px;
-    font-weight:700;
+.faq-question h3 {
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.faq-btn{
-    width:50px;
-    height:50px;
-    border-radius:50%;
-    border:1px solid #bbb;
-    background:#fff;
-    cursor:pointer;
-    font-size:20px;
-    transition:.3s;
+.faq-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid #bbb;
+    background: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .3s;
     align-items: center;
     text-align: center;
 }
 
-.faq-btn:hover{
-    background:#f1f1f1;
+.faq-btn:hover {
+    background: #f1f1f1;
 }
 
-.faq-btn i{
+.faq-btn i {
     position: relative;
     top: 10px;
 }
 
-.faq-answer{
-    max-height:0;
-    overflow:hidden;
-    transition:max-height .4s ease;
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .4s ease;
 }
 
-.faq-answer p{
-    padding:0 28px 28px;
+.faq-answer p {
+    padding: 0 28px 28px;
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.faq-item.active .faq-answer {
+    min-height: 50px;
+}
+
+
+
+
+/* BOOKING--RIDE */
+
+
+
+
+
+
+/* DRIVER-PAGE */
+
+.dashboard {
+    overflow-x: hidden !important;
+    display: grid;
+    grid-template-columns: repeat(3, 16rem);
+}
+
+/* side-bar */
+
+
+#side-bar{
+    width:16.6%;
+    height:100vh;
+    background:#111;
+    color:white;
+    display:flex;
+    flex-direction:column;
+    position: fixed;
+    overflow-y: scroll;
+    overflow-x: hidden !important;
+    scrollbar-color: transparent transparent;
+
+}
+
+.logo{
+    color:#ffd900;
+    text-align:center;
+    padding:25px 0;
+    border-bottom:1px solid #333;
+}
+
+.profile{
+    text-align:center;
+    padding:25px;
+}
+
+.profile img{
+    width:110px;
+    height:110px;
+    border-radius:50%;
+    border:4px solid #ffd900;
+    object-fit:cover;
+}
+
+#driverName{
+    color: #fff;
+    position: absolute;
+    top: 35vh;
+    font-size: 14px;
+}
+
+.profile p{
+    color: #ffff;
+    margin-top:5px;
+}
+
+.menu{
+    padding:15px;
+}
+
+.menu button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    margin-bottom:10px;
     font-size:15px;
-    color:#555;
-    line-height:1.7;
+    position: relative;
+    top: 40vh;
 }
 
-.faq-item.active .faq-answer{
-    min-height:50px;
+.menu-btn{
+    background:#222;
+    color:white;
 }
+
+.menu-btn:hover{
+    background:#ffd900;
+    color:black;
+}
+
+.logoutBtn{
+    background:#d60000;
+    color:white;
+}
+
+.logoutBtn:hover{
+    background:red;
+}
+
+#settingsBox{
+
+    display:none;
+    background:#1d1d1d;
+    border-radius:10px;
+    margin-bottom:15px;
+    overflow:hidden;
+    animation:slide .3s ease;
+    position: relative;
+    top: 39.5vh;
+    align-items: center;
+}
+
+#settingsBox button,
+.uploadBtn{
+
+    display:block;
+    width:100%;
+    padding:14px;
+    color:white;
+    background:none;
+    border:none;
+    border-bottom:1px solid #333;
+    cursor:pointer;
+    text-align:left;
+    align-items: center;
+    font-size:13px;
+
+}
+
+#settingsBox button:hover,
+.uploadBtn:hover{
+    background:#333;
+
+}
+
+.uploadBtn{
+    color:white;
+}
+
+@keyframes slide{
+
+    from{
+        opacity:0;
+        transform:translateY(-10px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/* head */
+.head {
+    border: 1px solid #e8e5e5;
+    height: 10vh;
+    width: 83%;
+    grid-column: 2 / sapn 3;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffff;
+    z-index: 100;
+    position: fixed;
+    margin-left: 35vh;
+    padding: 40px;
+    
+}
+
+ .headimage{
+    width: 14%;
+}
+
+.head-text{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.fa-bell:hover{
+    color: var(--fourth-color);
+}
+
+/* main */
+.main {
+    border: 1px solid #f5f5f5;
+    background-color: #f5f5f5;
+    height: 100rem;
+    grid-column: 2 / span 5;
+    /* margin-top: -90vh; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Responsive */
@@ -3973,334 +4195,334 @@ input {
 /* Large Laptops */
 @media (max-width: 1200px) {
 
-    .overlayy{
+    .overlayy {
         flex-direction: column;
         justify-content: center;
-        padding:40px 30px;
+        padding: 40px 30px;
         position: relative;
     }
 
-    .section-background1{
+    .section-background1 {
         min-height: auto;
-        padding:80px 5%;
+        padding: 80px 5%;
     }
 
-    .textt{
-        text-align:center;
-        align-items:center;
+    .textt {
+        text-align: center;
+        align-items: center;
     }
 
-    .textt h1{
-        font-size:42px;
+    .textt h1 {
+        font-size: 42px;
     }
 
-    .textt p{
-        font-size:22px;
+    .textt p {
+        font-size: 22px;
     }
 
-    .driver-form{
-        width:100%;
-        max-width:500px;
-        height:auto;
+    .driver-form {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
     }
 
-    .mobile-text{
-        flex-direction:column;
-        gap:40px;
+    .mobile-text {
+        flex-direction: column;
+        gap: 40px;
     }
 
-    .mobile-text .mobile-image{
-        width:60%;
-        height:auto;
+    .mobile-text .mobile-image {
+        width: 60%;
+        height: auto;
     }
 
-    .text-mobile1{
-        text-align:center;
+    .text-mobile1 {
+        text-align: center;
     }
 
-    .faq-section{
-        width:85%;
+    .faq-section {
+        width: 85%;
     }
 
 }
 
 
 /* Tablets */
-@media (max-width: 992px){
+@media (max-width: 992px) {
 
-    .container{
-        max-width:500px;
+    .container {
+        max-width: 500px;
     }
 
     .logoo,
-    .logooo h1{
-        font-size:45px;
+    .logooo h1 {
+        font-size: 45px;
     }
 
-    .textt h1{
-        font-size:36px;
+    .textt h1 {
+        font-size: 36px;
     }
 
-    .textt p{
-        font-size:20px;
+    .textt p {
+        font-size: 20px;
     }
 
-    .driver-form{
-        max-width:100%;
+    .driver-form {
+        max-width: 100%;
     }
 
-    .phone-group{
-        flex-direction:column;
+    .phone-group {
+        flex-direction: column;
     }
 
-    .country-code{
-        width:100%;
+    .country-code {
+        width: 100%;
     }
 
-    .phone-input{
-        width:100%;
+    .phone-input {
+        width: 100%;
     }
 
-    .section-background2 h1{
-        font-size:36px;
+    .section-background2 h1 {
+        font-size: 36px;
     }
 
-    .section-background2 p{
-        font-size:18px;
-        padding:0 20px;
+    .section-background2 p {
+        font-size: 18px;
+        padding: 0 20px;
     }
 
-    .mobile-text .mobile-image{
-        width:75%;
+    .mobile-text .mobile-image {
+        width: 75%;
     }
 
-    .text-fuction h1{
-        text-align:center;
-        align-self:center;
+    .text-fuction h1 {
+        text-align: center;
+        align-self: center;
     }
 
 }
 
 
 /* Phones */
-@media (max-width:768px){
+@media (max-width:768px) {
 
-    body{
-        overflow-x:hidden;
+    body {
+        overflow-x: hidden;
     }
 
     .bod,
-    .bbb{
-        padding:20px;
+    .bbb {
+        padding: 20px;
     }
 
-    .container{
-        width:100%;
-        padding:20px;
+    .container {
+        width: 100%;
+        padding: 20px;
     }
 
     .logoo,
-    .logooo h1{
-        font-size:38px;
+    .logooo h1 {
+        font-size: 38px;
     }
 
-    h3{
-        font-size:20px;
+    h3 {
+        font-size: 20px;
     }
 
-    .tabs{
-        flex-direction:column;
+    .tabs {
+        flex-direction: column;
     }
 
-    .tab{
-        width:100%;
+    .tab {
+        width: 100%;
     }
 
-    .phone-box{
-        flex-direction:column;
-        gap:10px;
+    .phone-box {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .phone-box select,
-    .phone-box input{
-        width:100%;
-        border-radius:8px;
+    .phone-box input {
+        width: 100%;
+        border-radius: 8px;
     }
 
     input,
-    select{
-        font-size:16px;
+    select {
+        font-size: 16px;
     }
 
     #continueBtn,
     .reset-btns,
     .back-btns,
-    .back-btnss{
-        font-size:20px;
+    .back-btnss {
+        font-size: 20px;
     }
 
-    .language{
-        width:100%;
-        max-width:250px;
+    .language {
+        width: 100%;
+        max-width: 250px;
     }
 
-    .textt h1{
-        font-size:30px;
+    .textt h1 {
+        font-size: 30px;
     }
 
-    .textt p{
-        font-size:18px;
+    .textt p {
+        font-size: 18px;
     }
 
-    .driver-form h1{
-        font-size:30px;
+    .driver-form h1 {
+        font-size: 30px;
     }
 
-    .card-contents{
-        padding:25px;
+    .card-contents {
+        padding: 25px;
     }
 
-    .card-contents h2{
-        font-size:22px;
+    .card-contents h2 {
+        font-size: 22px;
     }
 
-    .section-background2 h1{
-        font-size:30px;
+    .section-background2 h1 {
+        font-size: 30px;
     }
 
-    .mobile-text .mobile-image{
-        width:90%;
+    .mobile-text .mobile-image {
+        width: 90%;
     }
 
-    .text-mobile1 h3{
-        font-size:25px;
-        line-height:35px;
+    .text-mobile1 h3 {
+        font-size: 25px;
+        line-height: 35px;
     }
 
-    .pptext{
-        font-size:17px;
+    .pptext {
+        font-size: 17px;
     }
 
-    .faq-section{
-        width:95%;
+    .faq-section {
+        width: 95%;
     }
 
-    .faq-question{
-        padding:20px;
+    .faq-question {
+        padding: 20px;
     }
 
-    .faq-question h3{
-        font-size:17px;
+    .faq-question h3 {
+        font-size: 17px;
     }
 
-    .faq-btn{
-        width:42px;
-        height:42px;
+    .faq-btn {
+        width: 42px;
+        height: 42px;
     }
 
 }
 
 
 /* Small Phones */
-@media (max-width:480px){
+@media (max-width:480px) {
 
-    .container{
-        padding:18px;
+    .container {
+        padding: 18px;
     }
 
     .logoo,
-    .logooo h1{
-        font-size:32px;
+    .logooo h1 {
+        font-size: 32px;
     }
 
-    .textt h1{
-        font-size:26px;
+    .textt h1 {
+        font-size: 26px;
     }
 
-    .textt p{
-        font-size:16px;
+    .textt p {
+        font-size: 16px;
     }
 
-    .driver-form{
-        padding:18px;
+    .driver-form {
+        padding: 18px;
     }
 
-    .driver-form h1{
-        font-size:26px;
+    .driver-form h1 {
+        font-size: 26px;
     }
 
-    .section-background2 h1{
-        font-size:25px;
+    .section-background2 h1 {
+        font-size: 25px;
     }
 
-    .section-background2 p{
-        font-size:16px;
-        line-height:28px;
+    .section-background2 p {
+        font-size: 16px;
+        line-height: 28px;
     }
 
-    .card-images{
-        height:220px;
+    .card-images {
+        height: 220px;
     }
 
-    .card-contents{
-        padding:20px;
+    .card-contents {
+        padding: 20px;
     }
 
-    .card-contents h2{
-        font-size:20px;
+    .card-contents h2 {
+        font-size: 20px;
     }
 
-    .faq-question{
-        padding:18px;
+    .faq-question {
+        padding: 18px;
     }
 
-    .faq-question h3{
-        font-size:15px;
+    .faq-question h3 {
+        font-size: 15px;
     }
 
-    .faq-answer p{
-        font-size:14px;
+    .faq-answer p {
+        font-size: 14px;
     }
 
     .subtitle,
-    .subtitlee{
-        font-size:15px;
+    .subtitlee {
+        font-size: 15px;
     }
 
-    .language{
-        font-size:14px;
+    .language {
+        font-size: 14px;
     }
 
 }
 
 
 /* Extra Small Phones */
-@media (max-width:320px){
+@media (max-width:320px) {
 
     .logoo,
-    .logooo h1{
-        font-size:28px;
+    .logooo h1 {
+        font-size: 28px;
     }
 
-    .container{
-        padding:15px;
+    .container {
+        padding: 15px;
     }
 
-    .tab{
-        font-size:14px;
-        padding:12px;
+    .tab {
+        font-size: 14px;
+        padding: 12px;
     }
 
     input,
-    select{
-        font-size:15px;
+    select {
+        font-size: 15px;
     }
 
     #continueBtn,
     .reset-btns,
     .back-btns,
-    .back-btnss{
-        font-size:18px;
+    .back-btnss {
+        font-size: 18px;
     }
 
 }

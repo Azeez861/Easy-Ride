@@ -45,7 +45,7 @@ setInterval(() => {
 
     slider.style.transform = `translateX(-${currentSlide * 100}vw)`;
 
-}, 2000); // 10000ms = 10 seconds
+}, 2000); 
 
 
 
@@ -64,20 +64,19 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        // Show the toast
+      
         toast.classList.add("show");
 
-        // Hide it after 3 seconds
+        
         setTimeout(function () {
             toast.classList.remove("show");
         }, 2000);
 
-        // Reset the form
+        
         form.reset();
     });
 
 });
-
 
 
 const tabs = document.querySelectorAll(".tab");
@@ -98,10 +97,7 @@ tabs.forEach(tab => {
         forms.forEach(form => form.classList.remove("active"));
 
         tab.classList.add("active");
-
-        document
-        .getElementById(tab.dataset.tab)
-        .classList.add("active");
+        document.getElementById(tab.dataset.tab).classList.add("active");
 
         activeTab = tab.dataset.tab;
 
@@ -111,24 +107,43 @@ tabs.forEach(tab => {
 
 });
 
-function checkInput(){
+function checkInput() {
 
-    if(activeTab === "emailForm"){
+    if (activeTab === "emailForm") {
 
-        continueBtn.disabled =
-        emailInput.value.trim()==="";
+        continueBtn.disabled = emailInput.value.trim() === "";
 
-    }
+    } else {
 
-    else{
-
-        continueBtn.disabled =
-        phoneInput.value.trim()==="";
+        continueBtn.disabled = phoneInput.value.trim() === "";
 
     }
 
 }
 
+emailInput.addEventListener("input", checkInput);
+phoneInput.addEventListener("input", checkInput);
+
+continueBtn.addEventListener("click", function () {
+
+    let user = "";
+
+    if (activeTab === "emailForm") {
+        user = emailInput.value.trim();
+    } else {
+        user = phoneInput.value.trim();
+    }
+
+    localStorage.setItem("easyRideUser", user);
+
+    window.location.href = "Driver-page.html";
+
+});
+
 emailInput.addEventListener("input",checkInput);
 
 phoneInput.addEventListener("input",checkInput);
+
+
+
+
