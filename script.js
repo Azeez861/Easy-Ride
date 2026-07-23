@@ -136,7 +136,7 @@ continueBtn.addEventListener("click", function () {
 
     localStorage.setItem("easyRideUser", user);
 
-    window.location.href = "Driver-page.html";
+    window.location.href = "/Dash-board/index.html";
 
 });
 
